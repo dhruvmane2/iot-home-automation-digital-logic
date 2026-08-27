@@ -1,129 +1,144 @@
 IoT-Based Home Automation System
 
-📌 Project Overview
+Project Overview
 
-An IoT-based home automation system using digital logic, ESP32, sensors, actuators, Wi-Fi remote control, and power optimization. The system enables automatic and remote control of home appliances while improving energy efficiency.
+This project presents an IoT-based Home Automation System using digital logic, ESP32, sensors, actuators, Wi-Fi remote control, and power optimization.
 
-🎯 Objectives
+The system is designed to monitor home conditions and control appliances automatically or remotely. Digital logic is used to process inputs and generate appropriate control signals for the connected actuators.
 
-- Automate home appliances using ESP32.
-- Monitor environmental conditions using sensors.
-- Control actuators based on sensor inputs.
-- Provide remote control through Wi-Fi.
-- Use digital logic for automatic decision-making.
+Objectives
+
+- Design a smart home automation system using digital logic.
+- Interface sensors with the control system.
+- Control home appliances using actuators.
+- Provide Wi-Fi-based remote control.
+- Implement automatic decision-making.
 - Optimize power consumption.
 
-🛠️ Technologies Used
+Technologies Used
 
+- SystemVerilog / Verilog HDL
 - ESP32
 - Digital Logic
 - Sensors
 - Actuators
 - Wi-Fi
-- Arduino IDE
-- Embedded C/C++
+- Icarus Verilog
+- EPWave / GTKWave
+- GitHub
 
-⚙️ Working Principle
+System Working
 
-1. Sensors collect data from the home environment.
-2. ESP32 receives and processes the sensor data.
-3. Digital logic determines the required action.
-4. ESP32 controls the connected actuators.
-5. Appliances can also be controlled remotely through Wi-Fi.
-6. Power optimization logic turns appliances OFF when they are not required.
+1. Sensors provide input data to the control system.
+2. The digital logic processes the sensor inputs.
+3. The system determines whether an appliance should be switched ON or OFF.
+4. Actuators control the connected appliances.
+5. Wi-Fi enables remote control of the system.
+6. Power optimization logic helps avoid unnecessary appliance operation.
+7. The design is verified using a SystemVerilog testbench and waveform simulation.
 
-🔄 System Flow
+System Flow
 
 Sensors
-   ↓
-ESP32
-   ↓
-Digital Logic
-   ↓
+   |
+   v
+Digital Logic / ESP32
+   |
+   v
 Decision Making
-   ↓
-Actuators
-   ↓
+   |
+   v
+Actuator Control
+   |
+   v
 Home Appliances
-
+   ^
+   |
 Wi-Fi Remote Control
-        ↓
-      ESP32
 
-🔌 Components
+Power Optimization
+        |
+        v
+Efficient Appliance Control
+
+Main Components
 
 Component| Function
 ESP32| Main controller and Wi-Fi communication
-Sensors| Monitor environmental conditions
+Sensors| Detect environmental conditions
+Digital Logic| Processes inputs and generates control signals
 Actuators| Control home appliances
-Digital Logic| Automatic decision-making
-Wi-Fi| Remote control
-Power Supply| Provides power to the system
+Wi-Fi| Provides remote control
+Power Supply| Supplies electrical power
 
-⭐ Features
+Features
 
-- Automatic appliance control
-- Wi-Fi-based remote control
-- Sensor monitoring
-- Digital logic-based control
-- Energy-efficient operation
-- ESP32-based IoT system
+- Automatic home appliance control
+- Sensor-based operation
+- Wi-Fi remote control
+- Digital logic-based decision making
+- Actuator control
+- Power optimization
+- Simulation and waveform verification
 
-📊 Expected Output
+Simulation Files
 
-The system demonstrates:
+The project contains:
 
-Wi-Fi Connected
-Sensor Monitoring: ACTIVE
+- "design.sv" – Main SystemVerilog design
+- "testbench.sv" – Testbench for verification
+- "simulation/" – Simulation-related files
+- "waveform.jpg" – Simulation waveform
 
-Light: ON
-Fan: OFF
-Temperature: 28°C
+Expected Output
+
+The simulation verifies that the system responds correctly to sensor inputs and control commands.
+
+Example:
+
+==============================
+ IoT HOME AUTOMATION SYSTEM
+==============================
+
+System Status: ACTIVE
+Wi-Fi: CONNECTED
+
+Sensor Input: NORMAL
+Appliance 1: ON
+Appliance 2: OFF
 
 Remote Control: ENABLED
 Power Optimization: ENABLED
 
-📁 Project Structure
-
-IoT-Home-Automation/
-│
-├── src/
-│   └── home_automation.ino
-│
-├── simulation/
-│   └── .gitkeep
-│
-├── images/
-│   ├── block_diagram.jpg
-│   └── circuit_diagram.jpg
-│
-└── README.md
-
-🚀 Applications
+Applications
 
 - Smart homes
 - Smart lighting
 - Automatic fan control
 - Remote appliance control
-- Energy management
-- IoT-based home monitoring
+- Energy-efficient homes
+- IoT-based monitoring systems
 
-📚 Learning Outcomes
+Learning Outcomes
 
-- ESP32 programming
+This project provides practical understanding of:
+
+- Digital logic design
+- SystemVerilog programming
+- ESP32-based IoT systems
 - Sensor interfacing
 - Actuator control
 - Wi-Fi communication
-- Digital logic design
-- IoT implementation
+- Testbench development
+- Simulation and waveform analysis
 - Power optimization
-- Hardware-software integration
 
-👨‍💻 Author
+Author
 
 Dhruv Mane
+
 B.Tech – Electronics & Communication Engineering
 
-📄 License
+License
 
 This project is developed for educational and academic purposes.
